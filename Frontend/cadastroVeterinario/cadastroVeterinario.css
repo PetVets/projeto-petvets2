@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #8aacba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+input:focus {
+    border-color: #8aacba;
+    box-shadow: 0 0 5px rgba(138, 172, 186, 0.4);
+}
+
+
+.linha {
+    display: flex;
+    gap: 15px;
+}
+
+.linha input {
+    flex: 1;
+}
+
+
+button {
+    background-color: #8aacba;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+
+button:hover {
+    background-color: #7296a6;
+}
+
+
+.erro {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 10px;
+    min-height: 20px;
+}
+
+
+.cadastro {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.cadastro a {
+    color: #8aacba;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cadastro a:hover {
+    color: #5d7e8d;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+    .linha {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
