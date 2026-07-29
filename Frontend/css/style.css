@@ -1,0 +1,263 @@
+/* RESET */ 
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "Segoe UI", Arial, sans-serif; 
+} 
+
+body { 
+    background-color: #f5f5f5; 
+    color: #8aacba; 
+} 
+
+/* HEADER */ 
+.header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+ 
+    background: #8aacba; 
+} 
+
+.header {
+    height: 70px; /* controla altura */
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8aacba;
+}
+
+.header {
+    height: 65px; /* diminua aqui */
+}
+
+.main-header {
+  height: 65px;
+}
+
+
+.header .logo img{ 
+   
+} 
+
+.logo {
+    margin-left: 40px; /* aumenta conforme quiser */
+}
+
+.header .logo{
+    width: 40;
+    height: 40;
+}
+
+.contact img { 
+    background: transparent; 
+    mix-blend-mode: multiply; 
+} 
+
+.social img { 
+    background: transparent; 
+    mix-blend-mode: multiply; 
+} 
+
+
+
+.buttons { 
+    display: flex; 
+    gap: 15px; 
+} 
+
+.btn { 
+    padding: 10px 40px; 
+    border-radius: 6px; 
+    border: 1px solid #ffffff; 
+    cursor: pointer; 
+    font-weight: 500; 
+    transition: 0.3s; 
+    color: #8aacba;
+} 
+
+
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 60px; /* Define uma altura fixa para o header todo */
+  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* MAIN */ 
+.main { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 50px 60px; 
+    gap: 40px; 
+} 
+
+ /* TEXTO */ 
+.content { 
+    max-width: 500px; 
+} 
+
+.welcome { 
+    font-size: 14px; 
+    color: #8aacba; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+} 
+
+.content h2 { 
+    font-size: 40px; 
+    line-height: 1.2; 
+    margin-bottom: 15px;
+    color: #2c2c2c; 
+} 
+
+.content h2 span { 
+    color: #8aacba; 
+} 
+
+.divider { 
+    width: 65px; 
+    height: 4px; 
+    background-color: #8aacba; 
+    margin: 15px 0; 
+} 
+
+.description { 
+    font-size: 15px; 
+    margin-bottom: 14px; 
+    color: #2c2c2c; 
+} 
+
+/* IMAGEM */ 
+.image { 
+    position: relative; 
+    width: 100%; 
+    max-width: 100px; /* aumenta aqui */ 
+} 
+
+.slider { 
+    width: 800px; 
+    height: 500px; /* aumenta a altura */ 
+} 
+
+.slide { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+} 
+
+.dot { 
+    cursor: pointer; 
+    transition: 0.3s; 
+} 
+
+.dot.active { 
+    background-color: #8aacba; 
+    transform: scale(1.2); 
+} 
+
+/* DOTS */ 
+.dots { 
+    position: absolute; 
+    bottom: 15px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex; 
+    gap: 8px; 
+} 
+
+.dots span { 
+    width: 8px; 
+    height: 8px; 
+    background-color: #ccc; 
+    border-radius: 50%; 
+} 
+
+.dots .active { 
+    background-color: #8aacba; 
+} 
+
+.cadastrar { 
+    font-size: 15px; 
+} 
+
+/* FOOTER */ 
+.footer { 
+    background: linear-gradient(90deg, #8aacba, #8aacba); 
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 40px; 
+    margin-top: 0px; 
+} 
+
+.footer div { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+} 
+
+.footer p { 
+    font-size: 13px; 
+} 
+
+/* RESPONSIVO */ 
+@media (max-width: 900px) { 
+    .main { 
+        flex-direction: column; 
+        text-align: center; 
+    } 
+
+    .content { 
+        max-width: 100%; 
+    } 
+
+    .image { 
+        max-width: 100%; 
+    } 
+
+    .header { 
+        flex-direction: column; 
+        gap: 15px; 
+    } 
+} 
+
+html, body { 
+    height: 100%; 
+} 
+
+body { 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; /* ESSENCIAL */ 
+} 
+
+/* Faz o conteúdo ocupar o espaço e empurrar o footer */ 
+.main { 
+    flex: 1; 
+} 
+
+/* Footer sempre no final */ 
+.footer { 
+    margin-top: auto; 
+} 
+
+/* Faz o conteúdo crescer e empurrar o footer */ 
+.slide { 
+    width: 100%; 
+    display: none; 
+    border-radius: 10px; 
+} 
+
+.slide.active { 
+    display: block; 
+} 
