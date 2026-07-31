@@ -98,32 +98,9 @@ header{
 }
 
 
-
-.ilustracao{
-
-    flex:1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-width:300px;
-
-}
-
-
-.ilustracao img{
-
-    width:420px;
-    max-width:100%;
-
-}
-
-
-
-/* FORMULARIO */
-
-
 .form-box{
 
+    align-items: center;
     flex:1;
     max-width:650px;
     background:white;
@@ -131,6 +108,7 @@ header{
     border-radius:25px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     border:2px solid #eefbff;
+    font-size: 15px;
 
 }
 
@@ -140,9 +118,21 @@ header{
     text-align:center;
     color:var(--azul3);
     margin-bottom:30px;
+    font-size: 40px;
 
 }
 
+.form-box h1{
+    text-align: center;
+    margin-bottom:30px;
+    font-size: 25px;
+}
+
+.form-box a{
+    text-align: center;
+    text-align: center;
+    font-size: 15px;
+}
 
 
 .grid{
