@@ -30,8 +30,8 @@ form.addEventListener("submit", function(e){
     return;
 } 
 
-    if (cpf.length !== 11) {
-    alert('CPF inválido, insira exatamente 11 números!');
+    if (cpf.length !== 14) {
+    alert('CPF inválido, insira exatamente 14 caracteres!');
     return;
 }
 

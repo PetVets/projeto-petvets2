@@ -5,82 +5,41 @@ const API = "http://localhost:8080/pets";
 
 
 async function buscarPets(){
-
-
     try{
-
-
         const resposta = await fetch(API);
-
-
-
         if(!resposta.ok){
-
             throw new Error("Erro ao buscar pets");
-
         }
 
-
-
         const pets = await resposta.json();
-
-
-
         listaPets.innerHTML = "";
-
-
-
         pets.forEach(pet =>{
-
-
             listaPets.innerHTML += `
 
-
             <div class="card">
-
-
                 <h2>
                 🐾 ${pet.nome}
                 </h2>
-
-
 
                 <p>
                 <strong>Espécie:</strong>
                 ${pet.especie}
                 </p>
 
-
-
-                <p>
-                <strong>Raça:</strong>
-                ${pet.raca}
-                </p>
-
-
-
                 <p>
                 <strong>Idade:</strong>
                 ${pet.idade} anos
                 </p>
 
-
-
                 <hr>
-
-
-
                 <h3>
-                👤 Tutor
+                 Tutor
                 </h3>
-
-
 
                 <p>
                 <strong>Nome:</strong>
                 ${pet.tutor.nome}
                 </p>
-
 
                 <p>
                 <strong>Telefone:</strong>
@@ -88,17 +47,13 @@ async function buscarPets(){
                 </p>
 
 
-
                 <p>
                 <strong>Email:</strong>
                 ${pet.tutor.email}
                 </p>
 
-
-
-
                 <h3>
-                🩺 Veterinário
+                Veterinário
                 </h3>
 
 
@@ -117,49 +72,17 @@ async function buscarPets(){
 
 
 
-            </div>
-
-
-            `;
-
-
+            </div>`;
         });
-
-
-
     }
 
-
     catch(erro){
-
-
         console.error(erro);
-
-
         listaPets.innerHTML = `
-
         <p class="erro">
         Não foi possível carregar os pets.
         </p>
-
         `;
-
-
     }
-
-
 }
-
-
-
-
-function voltar(){
-
-window.location.href="../cadastroPet/cadastroPet.html";
-
-}
-
-
-
-
 buscarPets();
