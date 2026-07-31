@@ -7,7 +7,7 @@ formulario.addEventListener("submit", function(event) {
     const animal = document.getElementById("animal").value.trim();
     const idade = document.getElementById("idade").value.trim();
     const especie = document.getElementById("especie").value.trim();
-
+    const observacoes = document.getElementById("observacoes").value.trim(); 
     erroMsg.textContent = "";
 
     if (!animal || !idade || !especie || !observacoes) {
