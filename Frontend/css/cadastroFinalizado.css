@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+:root{
+
+    --azul:#A9E7FF;
+    --azul2:#DFF7FF;
+    --azul3:#67C8F3;
+    --texto:#4E4E4E;
+
+}
+
+
+body{
+
+    background:#fff;
+    color:var(--texto);
+
+}
+
+
+/* HEADER */
+
+header{
+
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+
+}
+
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:0;
+    font-size:30px;
+    font-weight:700;
+    color:var(--azul3);
+
+}
+
+
+.logo img{
+
+    width:65px;
+    margin-right:-5px;
+
+}
+
+
+.btn-voltar{
+
+    text-decoration:none;
+    background:var(--azul);
+    color:#35515f;
+    padding:12px 22px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+
+.btn-voltar:hover{
+
+    background:var(--azul3);
+    color:white;
+    transform:translateY(-2px);
+
+}
+
+
+
+/* CONTEUDO */
+
+.container{
+
+    width:100%;
+    min-height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:70px;
+    padding:50px 8%;
+    flex-wrap:wrap;
+
+}
+
+
+
+.ilustracao{
+
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-width:300px;
+
+}
+
+
+.ilustracao img{
+
+    width:420px;
+    max-width:100%;
+
+}
+
+
+
+/* FORMULARIO */
+
+
+.form-box{
+
+    flex:1;
+    max-width:650px;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    border:2px solid #eefbff;
+
+}
+
+
+.form-box h2{
+
+    text-align:center;
+    color:var(--azul3);
+    margin-bottom:30px;
+
+}
+
+
+
+.grid{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+
+
+.input-group{
+
+    margin-bottom:18px;
+
+}
+
+
+
+.input-group label{
+
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+
+}
+
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+
+    width:100%;
+    padding:14px;
+    border:2px solid #dceef5;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+
+
+}
+
+
+.input-group textarea{
+
+    resize:none;
+    height:90px;
+
+}
+
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:var(--azul3);
+
+}
+ 
+/* BOTAO */
+
+button{
+
+    width:100%;
+    padding:16px;
+    margin-top:15px;
+    border:none;
+    border-radius:50px;
+    background:var(--azul);
+    color:#35515f;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    background:var(--azul3);
+    color:white;
+    transform:translateY(-2px);
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+    padding:25px;
+    text-align:center;
+    color:#777;
+    border-top:1px solid #eee;
+    margin-top:30px;
+
+}
+
+
+
+/* RESPONSIVO */
+
+
+@media(max-width:900px){
+
+
+.container{
+
+    flex-direction:column;
+    gap:30px;
+
+}
+
+
+.grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.ilustracao img{
+
+    width:250px;
+
+}
+
+
+.form-box{
+
+    width:100%;
+    padding:30px;
+
+}
+
+
+}
