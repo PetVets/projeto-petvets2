@@ -87,7 +87,7 @@ header{
 }
 
 .ilustracao img{
-    width:400px;
+    width:420px;
     max-width:100%;
 }
 
@@ -95,8 +95,8 @@ header{
     flex:1;
     max-width:650px;
     background:white;
-    padding: 25px;
-    border: radius 15px;
+    padding:40px;
+    border-radius:25px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     border:2px solid #eefbff;
 }
@@ -108,17 +108,17 @@ header{
     font-size: 35px;
 }
 
-.input-group{
+.container-formulario{
     margin-bottom:18px;
 }
 
-.input-group label{
+.container-formulario label{
     display:block;
     margin-bottom:8px;
     font-weight:600;
 }
 
-.input-group input{
+.container-formulario input{
     width:100%;
     padding:14px;
     border:2px solid #dceef5;
@@ -128,7 +128,7 @@ header{
     font-size:15px;
 }
 
-.input-group input:focus{
+.container-formulario input:focus{
     border-color:var(--azul3);
 }
 
@@ -160,29 +160,13 @@ button{
     color:white;
 }
 
-#btnAnimal{
-    background:#d8d8d8;
-    color:#777;
-    cursor:not-allowed;
-}
-
-#btnAnimal.ativo{
-    background:var(--azul);
-    color:#35515f;
-    cursor:pointer;
-}
-
-#btnAnimal.ativo:hover{
-    background:var(--azul3);
-    color:white;
-}
-
 footer{
     padding:25px;
-    text-align:center;
+    text-align: center;
     color:#777;
     border-top:1px solid #eee;
     margin-top:30px;
+    
 }
 
 @media(max-width:900px){
