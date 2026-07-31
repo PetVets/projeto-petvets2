@@ -9,7 +9,6 @@ formulario.addEventListener("submit", function(event) {
     const crmv = document.getElementById("CRMV").value.trim();
     const cpf = document.getElementById("cpf").value.trim();
     const telefone = document.getElementById("telefone").value.trim();
-
     erroMsg.textContent = "";
 
     if (!usuario || !senha || !crmv || !cpf || !telefone) {
