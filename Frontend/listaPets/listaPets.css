@@ -1,0 +1,167 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+body{
+
+    background:#ffffff;
+
+}
+
+
+
+header{
+
+    background:#8aacba;
+
+    padding:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+header h1{
+
+    color:white;
+
+}
+
+
+
+button{
+
+    background:white;
+
+    color:#8aacba;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+
+
+.lista{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+    padding:40px;
+
+}
+
+
+
+.card{
+
+    width:330px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0px 5px 15px #ccc;
+
+    border-top:8px solid #8aacba;
+
+}
+
+
+
+.card h2{
+
+    color:#8aacba;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card h3{
+
+    color:#8aacba;
+
+    margin-top:15px;
+
+}
+
+
+
+.card p{
+
+    margin:8px 0;
+
+    color:#555;
+
+}
+
+
+
+hr{
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+    margin:15px 0;
+
+}
+
+
+
+.erro{
+
+    color:red;
+
+    text-align:center;
+
+    width:100%;
+
+}
+
+.logo-area{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.logo-area img{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:contain;
+
+}
