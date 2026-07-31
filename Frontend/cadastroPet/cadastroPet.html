@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Veterinário</title>
+    <link rel="stylesheet" href="../cadastroPet/cadastroPet.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="login-box">
+
+        <h1>CADASTRO</h1>
+
+        <form id="loginForm">
+
+            <input type="text" id="animal" placeholder="Nome do Pet" required>
+
+            <input type="number" id="idade" placeholder="Idade" required>
+
+            <input type="text" id="especie" placeholder="Espécie" required>
+
+            <input type="text" id="observacoes" placeholder="Observações do Pet" required>
+
+            <button type="submit">CADASTRAR</button>
+
+        </form>
+
+        <p class="erro" id="erroMsg"></p>
+
+        <p class="cadastro">
+            Já tem conta? <a href="/cadastroPet/logarConta.html">Clique aqui!</a>
+        </p>
+
+    </div>
+</div>
+
+<script src="../cadastroPet/cadastroPet.js"></script>
+
+</body>
+</html>
